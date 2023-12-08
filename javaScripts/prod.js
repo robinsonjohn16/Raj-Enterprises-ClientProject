@@ -22,4 +22,3 @@ toggleBtn.onclick = function () {
   const isOpen = dropDowm.classList.contains("open");
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
-
