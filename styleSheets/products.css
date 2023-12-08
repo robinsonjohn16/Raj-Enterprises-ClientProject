@@ -1,0 +1,245 @@
+main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
+  padding-top: 6em;
+}
+.leftMain {
+  width: 50%;
+}
+.rightMain {
+  width: 38%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoHeading {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.infoContent {
+  padding-top: 1em;
+  text-align: justify;
+}
+.rightFeature ul {
+  padding-top: 1em;
+  display: block;
+  align-self: flex-start;
+}
+.rightFeature ul li {
+  list-style: circle;
+}
+.contactBtn {
+  background-color: #028c9d;
+  border: none;
+  padding: 1em;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+  main {
+    width: 85%;
+    font-size: 13px;
+    flex-direction: column;
+  }
+  .leftMain {
+    width: 100%;
+  }
+  .rightMain {
+    width: 100%;
+  }
+}
+
+.main_view {
+  width: 85%;
+  margin: auto;
+  height: 28em;
+}
+
+.main_view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.side_view {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  /* flex-wrap: wrap; */
+}
+
+.side_view img {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+/* Form Section */
+section {
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
+}
+.quote {
+  padding-top: 4em;
+}
+form {
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  margin-top: 1em;
+  padding: 2em 0px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-evenly;
+}
+#name,
+#mail {
+  border-radius: 0.5em;
+  width: 41%;
+  /* height: 2vw; */
+  font-size: 0.8em;
+  padding: 0.5vw 0px 1vw 0.5vw;
+  border: 1px solid #b4b4b4;
+  background: rgba(235, 178, 178, 0);
+}
+#subject {
+  width: 89%;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  font-size: 0.8em;
+  padding: 0.5vw 0px 1vw 0.5vw;
+  background: rgba(204, 204, 204, 0);
+}
+#msg {
+  width: 89%;
+  font-size: 0.8em;
+  padding: 0.5vw 0px 7vw 0.5vw;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  background: rgba(204, 204, 204, 0);
+}
+#btn {
+  color: #ffffff;
+  font-size: 0.9em;
+  border: none;
+  margin-top: 2em;
+  background-color: #082530;
+  padding: 1em 2em;
+  border-radius: 0.3em;
+}
+/* *Quote Section */
+@media screen and (max-width: 800px) {
+  section {
+    width: 90%;
+  }
+  .quote {
+    margin-top: 9vw;
+  }
+  form {
+    width: 100%;
+  }
+  #name,
+  #mail {
+    width: 40%;
+  }
+  .quote {
+    font-size: 10px;
+  }
+}
+
+/* Related products */
+
+.related {
+  width: 90vw;
+  margin: auto;
+  padding-top: 4em;
+  font-size: 15px;
+}
+.productsGrid {
+  padding-top: 1.8em;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  flex-wrap: wrap;
+  gap: 1.2em;
+}
+.product {
+  border-radius: 1.7em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 24em;
+  height: 20em;
+}
+.topProduct {
+  height: 80%;
+}
+
+.topProduct img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.7em 1.7em 0 0;
+
+  background-position: center;
+}
+
+.bottomProduct {
+  width: 85%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.bottomProduct a button {
+  padding: 0.3em 1.5em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border: 0.5px solid black;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .related {
+    font-size: 13.5px;
+  }
+  .related .infoHeading {
+    width: 90%;
+  }
+}
+
+/* footer Special Case */
+footer {
+  margin-top: 5%;
+}
+
+/* .leftMain {
+  margin: 0 auto;
+  width: 90%;
+} */

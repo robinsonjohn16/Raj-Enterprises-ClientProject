@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raj Enterprises</title>
+    <title>Raj Enterprises | Product</title>
+
     <!-- Nav and Footer -->
     <link rel="stylesheet" href="./styleSheets/index.css" />
 
     <!-- Other Content Style -->
-    <link rel="stylesheet" href="./styleSheets/home.css" />
+    <link rel="stylesheet" href="./styleSheets/products.css" />
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
@@ -34,8 +37,7 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
   </head>
-
-  <body scrollbarContainer>
+  <body>
     <div id="preloader">
       <div class="preloader-logo">
         <svg
@@ -105,7 +107,7 @@
         </svg>
       </div>
     </div>
-    <header scrollbarContainer>
+    <header>
       <div class="header">
         <div class="main-header">
           <div class="header-left">
@@ -125,16 +127,16 @@
         </div>
       </div>
     </header>
-    <nav scrollbarContainer>
+    <nav>
       <ul>
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li>
           <div class="prod-dropdown">
             <a href="#">Products</a>
             <i class="ser fa-solid fa-caret-down"></i>
             <div class="prod-dropdown-content">
               <a href="#">PCC Panels</a>
-              <a href="./hvac.html">HVAC Panels</a>
+              <a href="#">HVAC Panels</a>
               <a href="#">FIRE Panels</a>
               <a href="#">PCC Panels</a>
               <a href="#">PCC Panels</a>
@@ -143,7 +145,7 @@
             </div>
           </div>
         </li>
-        <li><a href="./about.html">About Us</a></li>
+        <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
         <li class="menu-icon">
           <i class="bar-navbar fa-solid fa-bars"></i>
@@ -151,14 +153,14 @@
       </ul>
     </nav>
     <div class="nav-dropdown-mobile">
-      <li><a href="./index.html">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li>
         <div class="prod-dropdown">
           <a href="#">Products</a>
           <i class="ser fa-solid fa-caret-down"></i>
           <div class="prod-dropdown-content">
             <a href="#">PCC Panels</a>
-            <a href="./hvac.html">HVAC Panels</a>
+            <a href="#">HVAC Panels</a>
             <a href="#">FIRE Panels</a>
             <a href="#">PCC Panels</a>
             <a href="#">PCC Panels</a>
@@ -167,25 +169,97 @@
           </div>
         </div>
       </li>
-      <li><a href="./about.html">About Us</a></li>
+      <li><a href="#">About Us</a></li>
       <li><a href="#">Contact Us</a></li>
     </div>
-    <section scrollbarContainer data-scroll-speed>
-      <div class="heading">About Us</div>
-      <div class="subHeading">
-        Established in the year <span>2017</span> at
-        <span>Jogeshwari West, Mumbai, Maharashtra,</span> we
-        <span>Raj Enterprises</span>
-        are a <span>Proprietor Firm, engaged as the Manufacturer</span> of
-        <span> Control Panel, Fire Fighting Panel, Bus Duct,</span> etc. Our
-        products are high in demand due to their premium quality and affordable
-        prices. Furthermore, we ensure to timely deliver these products to our
-        clients, through this we have gained a huge clients base in the
-        market.....
+    <main>
+      <div class="leftMain">
+        <div class="main_view">
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            id="main"
+            alt="IMAGE"
+          />
+        </div>
+        <div class="side_view">
+          <img src="./assets/whatsapp.png" onclick="change(this.src)" />
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            onclick="change(this.src)"
+          />
+          <img src="./assets/examplePcc.png" onclick="change(this.src)" />
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="./assets/istockphoto-523478288-612x612 1.png"
+            onclick="change(this.src)"
+          />
+        </div>
+      </div>
+      <div class="rightMain">
+        <div class="rightInfo">
+          <div class="infoHeading">HVAC Panels</div>
+          <div class="infoContent">
+            Heating, ventilation and air conditioning (HVAC) control panels are
+            systems that manage the temperature and air in a given environment.
+            They are suitable for commercial, residential, public or industrial
+            usage.
+          </div>
+        </div>
+        <div class="rightFeature">
+          <div class="infoHeading">Our Features</div>
+          <div class="infoContent">
+            We are Specialist HVAC control panel manufacturer, has been
+            supplying quality manufactured HVAC controls for over three decades
+            and our extensive knowledge and experience with HVAC systems is one
+            of the primary reasons why clients choose our services
+          </div>
+          <ul>
+            <li>Heating controllers</li>
+            <li>Ventilation controllers</li>
+            <li>Air Conditioning controllers</li>
+          </ul>
+        </div>
+        <a href="./contact.html">
+          <button class="contactBtn">CONTACT US ></button></a
+        >
+      </div>
+    </main>
+    <section>
+      <div class="quote">
+        <div class="infoHeading">Quote Request</div>
+        <form>
+          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <input type="text" name="mail" id="mail" placeholder="Your Email" />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            maxlength="300"
+            placeholder="Subject"
+          />
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="Message"
+            maxlength="500"
+          ></textarea>
+          <input id="btn" type="button" value="Submit" />
+        </form>
       </div>
     </section>
-    <main scrollbarContainer data-scroll-delay>
-      <div class="heading">Manufacturers & Maintainers of</div>
+    <div class="related">
+      <div class="infoHeading">More Products</div>
       <div class="productsGrid">
         <div class="product">
           <div class="topProduct">
@@ -214,276 +288,10 @@
             <a href=""><button>Explore</button></a>
           </div>
         </div>
-        <div class="product">
-          <div class="topProduct">
-            <img src="./assets/examplePcc.png" alt="PCC" />
-          </div>
-          <div class="bottomProduct">
-            Power Control Center
-            <a href=""><button>Explore</button></a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="topProduct">
-            <img src="./assets/examplePcc.png" alt="PCC" />
-          </div>
-          <div class="bottomProduct">
-            Power Control Center
-            <a href=""><button>Explore</button></a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="topProduct">
-            <img src="./assets/examplePcc.png" alt="PCC" />
-          </div>
-          <div class="bottomProduct">
-            Power Control Center
-            <a href=""><button>Explore</button></a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="topProduct">
-            <img src="./assets/examplePcc.png" alt="PCC" />
-          </div>
-          <div class="bottomProduct">
-            Power Control Center
-            <a href=""><button>Explore</button></a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="topProduct">
-            <img src="./assets/examplePcc.png" alt="PCC" />
-          </div>
-          <div class="bottomProduct">
-            Power Control Center
-            <a href=""><button>Explore</button></a>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div scrollbarContainer class="clientSection">
-      <div class="clientLeft">
-        <div class="heading">Our Clients and their Reviews</div>
-        <div class="subHeading">
-          "Our supportive clients are the backbone of our success. They trust in
-          our expertise, rely on our services, and consistently provide valuable
-          feedback that helps us refine and improve our offerings. Their loyalty
-          and collaboration drive us to continuously exceed expectations and
-          deliver exceptional value."
-        </div>
-      </div>
-      <div class="clientRight">
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
-        <img src="./assets/clientImg.png" class="clientImg" alt="Logo" />
       </div>
     </div>
 
-    <div scrollbarContainer class="commentSection">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="commentDiv">
-              <div class="topComment">
-                <div class="topCircle">
-                  <img src="./assets/Inverted Commas.png" alt="Comma" />
-                </div>
-              </div>
-              <div class="middleComment">
-                Cloud Computing offers Advantages to the user by allowing them
-                to use the cloud infrastructure, platform and software by cloud
-                providers at low cost and elastically in an on-demand fashion
-              </div>
-              <div class="bottomComment">
-                <img
-                  src="./assets/istockphoto-523478288-612x612 1.png  "
-                  alt="Profile"
-                />
-                <p class="commentName">Robinson John</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-container">
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-    </div>
-
-    <footer scrollbarContainer>
+    <footer>
       <div class="flexFooter">
         <!-- <div class="leftContent"> -->
         <div class="footerLeft">
@@ -539,9 +347,6 @@
       <!-- </div> -->
     </footer>
   </body>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Gsap CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
 
@@ -551,6 +356,6 @@
   <!-- Locomotive -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
-  <!-- Vanilla JS  -->
-  <script src="./javaScripts/scripts.js"></script>
+  <!-- Vanilla Js -->
+  <script src="../javaScripts/prod.js"></script>
 </html>
