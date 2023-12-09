@@ -45,24 +45,10 @@ main {
   font-size: 0.8em;
   font-weight: 600;
 }
-@media screen and (max-width: 800px) {
-  main {
-    width: 85%;
-    font-size: 13px;
-    flex-direction: column;
-  }
-  .leftMain {
-    width: 100%;
-  }
-  .rightMain {
-    width: 100%;
-  }
-}
-
 .main_view {
   width: 85%;
   margin: auto;
-  height: 28em;
+  height: 27em;
 }
 
 .main_view img {
@@ -75,10 +61,11 @@ main {
 }
 
 .side_view {
+  padding-top: 1.4em;
   width: 85%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   overflow-x: scroll;
   /* flex-wrap: wrap; */
 }
@@ -92,6 +79,27 @@ main {
   margin: 0.5rem;
 }
 
+@media screen and (max-width: 800px) {
+  main {
+    width: 85%;
+    font-size: 14px;
+    gap: 4em;
+    flex-direction: column;
+  }
+  .leftMain {
+    width: 100%;
+  }
+  .rightMain {
+    width: 100%;
+  }
+  .main_view {
+    width: 99%;
+  }
+  .side_view {
+    width: 99%;
+  }
+}
+
 /* Form Section */
 section {
   width: 90%;
@@ -100,12 +108,14 @@ section {
 }
 .quote {
   padding-top: 4em;
+  padding-bottom: 1.5em;
 }
+
 form {
   border-radius: 0.5em;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 90%;
-  margin-top: 1em;
+  /* margin-top: 2em; */
   padding: 2em 0px;
   display: flex;
   margin: 0 auto;
@@ -145,13 +155,16 @@ form {
   border: none;
   margin-top: 2em;
   background-color: #082530;
-  padding: 1em 2em;
+  padding: 0.7em 1.6em;
   border-radius: 0.3em;
 }
 /* *Quote Section */
 @media screen and (max-width: 800px) {
   section {
     width: 90%;
+  }
+  .quote .infoHeading {
+    font-size: 2em;
   }
   .quote {
     margin-top: 9vw;
@@ -163,6 +176,12 @@ form {
   #mail {
     width: 40%;
   }
+  /* #name,
+  #mail,
+  #msg,
+  #subject {
+    font-size: 1.1em;
+  } */
   .quote {
     font-size: 10px;
   }

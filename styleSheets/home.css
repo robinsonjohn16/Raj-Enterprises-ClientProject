@@ -132,7 +132,7 @@ h2 {
 }
 @media (max-width: 600px) {
   .clientSection {
-    font-size: 12.1px;
+    font-size: 12px;
     gap: 2em;
     flex-direction: column;
   }
@@ -214,11 +214,15 @@ h2 {
 
 .middleComment {
   width: 80%;
+  font-size: 0.9em;
+  text-align: justify;
   font-weight: 500;
 }
 .bottomComment {
   display: flex;
   font-weight: 600;
+  gap: 0.6em;
+  font-size: 1em;
   align-items: center;
   justify-content: space-around;
 }
@@ -229,7 +233,18 @@ h2 {
 }
 @media (max-width: 600px) {
   .commentSection {
-    font-size: 10px;
+    font-size: 9px;
     height: 40em;
+  }
+  .bottomComment {
+    font-size: 0.95em;
+  }
+  .middleComment {
+    font-size: 0.85em;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 2em !important;
+    font-weight: 1000 !important;
   }
 }

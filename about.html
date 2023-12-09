@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raj Enterprises | About Us</title>
+
+    <!-- Page CSS -->
     <link rel="stylesheet" href="./styleSheets/about.css" />
+
+    <!-- Css for Nav and footer -->
     <link rel="stylesheet" href="./styleSheets/index.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/23ffd4fbcb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Locomotive -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
     <!-- Swiper JS CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,6 +106,71 @@
           </defs>
         </svg>
       </div>
+    </div>
+    <header scrollbarContainer>
+      <div class="header">
+        <div class="main-header">
+          <div class="header-left">
+            <img
+              class="logo"
+              src="./assets/image-removebg-preview.png"
+              alt="LOGO"
+            />
+            <h1>RAJ <span id="spanBackground">ENTERPRISES</span></h1>
+          </div>
+          <div class="header-right">
+            <img class="iso" src="./assets/iso-logo.png" alt="ISO" />
+          </div>
+        </div>
+        <div class="sub-heading">
+          <h2>-An ISO 9001-2005 CERTIFIED</h2>
+        </div>
+      </div>
+    </header>
+    <nav scrollbarContainer>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <div class="prod-dropdown">
+            <a href="#">Products</a>
+            <i class="ser fa-solid fa-caret-down"></i>
+            <div class="prod-dropdown-content">
+              <a href="#">PCC Panels</a>
+              <a href="./hvac.html">HVAC Panels</a>
+              <a href="#">FIRE Panels</a>
+              <a href="#">PCC Panels</a>
+              <a href="#">PCC Panels</a>
+              <a href="#">PCC Panels</a>
+              <a href="#">PCC Panels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="menu-icon">
+          <i class="bar-navbar fa-solid fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-dropdown-mobile">
+      <li><a href="./index.html">Home</a></li>
+      <li>
+        <div class="prod-dropdown">
+          <a href="#">Products</a>
+          <i class="ser fa-solid fa-caret-down"></i>
+          <div class="prod-dropdown-content">
+            <a href="#">PCC Panels</a>
+            <a href="./hvac.html">HVAC Panels</a>
+            <a href="#">FIRE Panels</a>
+            <a href="#">PCC Panels</a>
+            <a href="#">PCC Panels</a>
+            <a href="#">PCC Panels</a>
+            <a href="#">PCC Panels</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
     </div>
     <div class="div1">
       <div class="left-div1">
@@ -308,6 +392,63 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer scrollbarContainer>
+      <div class="flexFooter">
+        <!-- <div class="leftContent"> -->
+        <div class="footerLeft">
+          <div class="footerHeading">For Further Enquiry Contact :</div>
+          <div class="leftFlex">
+            <div class="leftTopBold">Email</div>
+            <div class="leftTop">
+              raj_enterprises2017@yahoo.com
+              <br />ananth.rajenterprises@gmail.com
+            </div>
+          </div>
+          <div class="leftFlex">
+            <div class="leftMiddleBold">Phone</div>
+            <div class="leftMiddle">
+              +91 9987148414 <br />
+              +91 9920690144
+            </div>
+          </div>
+          <div class="leftFlex">
+            <div class="leftBottomBold">Address</div>
+            <div class="leftBottom">
+              23-A, Surat Singh Industrial Estate, Behind Agarwal Industrial
+              Estate, S. V. Road, Jogeshwari(W), Mumbai - 400 102
+            </div>
+          </div>
+        </div>
+
+        <div class="footerMiddle">
+          <div class="footerHeading">Also Find Us At :</div>
+          <div class="middleContent">
+            <div class="middleLogo">
+              <img src="./assets/whatsapp.png" alt="Whatsapp" />
+            </div>
+            <div class="middleLable">Whatsapp</div>
+          </div>
+        </div>
+        <div class="footerRight">
+          <div class="rightHeading">Seeking the best? “Get a quote!”</div>
+          <button class="rightLabel">Inquire ></button>
+          <div class="rightHeading">
+            Connect with us for personalized assistance.
+          </div>
+          <button class="rightLabel">Get In Touch ></button>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="copyright">
+        <img src="./assets/copyright.png" alt="C" />
+        <div class="copyrightLabel">
+          Copyright 2023. All Rights Reserved, Website by Robinson
+        </div>
+      </div>
+      <!-- </div> -->
+    </footer>
   </body>
   <!-- Swiper JS JavaScript CDN  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

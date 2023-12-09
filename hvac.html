@@ -107,7 +107,7 @@
         </svg>
       </div>
     </div>
-    <header>
+    <header scrollbarContainer>
       <div class="header">
         <div class="main-header">
           <div class="header-left">
@@ -127,16 +127,16 @@
         </div>
       </div>
     </header>
-    <nav>
+    <nav scrollbarContainer>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li>
           <div class="prod-dropdown">
             <a href="#">Products</a>
             <i class="ser fa-solid fa-caret-down"></i>
             <div class="prod-dropdown-content">
               <a href="#">PCC Panels</a>
-              <a href="#">HVAC Panels</a>
+              <a href="./hvac.html">HVAC Panels</a>
               <a href="#">FIRE Panels</a>
               <a href="#">PCC Panels</a>
               <a href="#">PCC Panels</a>
@@ -145,7 +145,7 @@
             </div>
           </div>
         </li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="./about.html">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
         <li class="menu-icon">
           <i class="bar-navbar fa-solid fa-bars"></i>
@@ -153,14 +153,14 @@
       </ul>
     </nav>
     <div class="nav-dropdown-mobile">
-      <li><a href="#">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
       <li>
         <div class="prod-dropdown">
           <a href="#">Products</a>
           <i class="ser fa-solid fa-caret-down"></i>
           <div class="prod-dropdown-content">
             <a href="#">PCC Panels</a>
-            <a href="#">HVAC Panels</a>
+            <a href="./hvac.html">HVAC Panels</a>
             <a href="#">FIRE Panels</a>
             <a href="#">PCC Panels</a>
             <a href="#">PCC Panels</a>
@@ -169,39 +169,45 @@
           </div>
         </div>
       </li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="./about.html">About Us</a></li>
       <li><a href="#">Contact Us</a></li>
     </div>
     <main>
       <div class="leftMain">
         <div class="main_view">
           <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
+            src="https://i0.wp.com/trivoltelectric.com/wp-content/uploads/2020/05/HVAC-3.png?fit=560%2C560&ssl=1"
             id="main"
             alt="IMAGE"
           />
         </div>
         <div class="side_view">
-          <img src="./assets/whatsapp.png" onclick="change(this.src)" />
           <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
-            onclick="change(this.src)"
-          />
-          <img src="./assets/examplePcc.png" onclick="change(this.src)" />
-          <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
+            src="https://5.imimg.com/data5/KD/AX/MY-21114585/hvac-panels.jpg"
             onclick="change(this.src)"
           />
           <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
+            src="https://i0.wp.com/trivoltelectric.com/wp-content/uploads/2020/05/HVAC-3.png?fit=560%2C560&ssl=1"
             onclick="change(this.src)"
           />
           <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
+            src="https://5.imimg.com/data5/SELLER/Default/2023/1/TE/JO/YF/5585114/hvac-control-panels.png"
             onclick="change(this.src)"
           />
           <img
-            src="./assets/istockphoto-523478288-612x612 1.png"
+            src="https://expertengineers.co.in/images/service/hvac/img1.jpg"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://www.expertengineers.co.in/images/nav-img.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/4/301067526/BI/KZ/KY/2441686/hvac-control-panel-500x500.jpg"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://cpimg.tistatic.com/05864259/b/4/HVAC-Control-Panel.jpg"
             onclick="change(this.src)"
           />
         </div>
@@ -238,25 +244,25 @@
     <section>
       <div class="quote">
         <div class="infoHeading">Quote Request</div>
-        <form>
-          <input type="text" name="name" id="name" placeholder="Your Name" />
-          <input type="text" name="mail" id="mail" placeholder="Your Email" />
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            maxlength="300"
-            placeholder="Subject"
-          />
-          <textarea
-            name="msg"
-            id="msg"
-            placeholder="Message"
-            maxlength="500"
-          ></textarea>
-          <input id="btn" type="button" value="Submit" />
-        </form>
       </div>
+      <form>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <input type="text" name="mail" id="mail" placeholder="Your Email" />
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          maxlength="300"
+          placeholder="Subject"
+        />
+        <textarea
+          name="msg"
+          id="msg"
+          placeholder="Message"
+          maxlength="500"
+        ></textarea>
+        <input id="btn" type="button" value="Submit" />
+      </form>
     </section>
     <div class="related">
       <div class="infoHeading">More Products</div>
@@ -291,7 +297,8 @@
       </div>
     </div>
 
-    <footer>
+    <!-- Footer -->
+    <footer scrollbarContainer>
       <div class="flexFooter">
         <!-- <div class="leftContent"> -->
         <div class="footerLeft">

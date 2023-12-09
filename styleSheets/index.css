@@ -177,6 +177,7 @@ footer {
 }
 .footerRight {
   width: 25%;
+  /* align-items: center; */
 }
 .leftFlex {
   display: flex;
@@ -208,23 +209,25 @@ footer {
   gap: 0.8em;
 }
 .middleLogo img {
-  width: 1.9em;
-  height: 1.9em;
+  width: 1.7em;
+  height: 1.7em;
   padding-left: 1em;
 }
 .middleLable {
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .rightHeading {
   font-weight: 600;
   font-size: 1.1em;
 }
 .rightLabel {
+  /* align-self: center; */
   background-color: #003852;
   border: none;
+  margin-top: 0.5em;
   color: #fff;
-  padding: 0.6em 2em;
+  padding: 0.6em 1.5em;
   font-weight: 600;
   border-radius: 0.2em;
   margin-bottom: 3em;
@@ -243,8 +246,11 @@ footer {
   justify-content: center;
 }
 .copyright img {
-  width: 1.4em;
+  width: 1.3em;
   padding-right: 0.2em;
+}
+.copyrightLabel {
+  font-size: 0.95em;
 }
 @media (max-width: 600px) {
   footer {
@@ -255,16 +261,20 @@ footer {
   .footerRight {
     width: 100%;
   }
+  .footerRight {
+    display: flex;
+    flex-direction: column;
+  }
   .flexFooter {
     flex-direction: column;
-    gap: 2em;
+    gap: 3em;
   }
   .middleContent {
     justify-content: center;
   }
   .middleLogo img {
-    width: 2.4em;
-    height: 2.4em;
+    width: 1.7em;
+    height: 1.7em;
     /* padding-left: 1em; */
     padding-left: 0px;
   }
@@ -276,7 +286,9 @@ footer {
     justify-content: center;
   }
   .rightLabel {
-    margin-left: 7em;
+    align-self: center;
+
+    /* margin-left: 7em; */
   }
 }
 
