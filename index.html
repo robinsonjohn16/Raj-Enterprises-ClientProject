@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raj Enterprises</title>
-    <!-- Nav and Footer -->
+    <!-- Css Link -->
     <link rel="stylesheet" href="./styleSheets/index.css" />
 
-    <!-- Other Content Style -->
-    <link rel="stylesheet" href="./styleSheets/home.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -109,12 +107,15 @@
       <div class="header">
         <div class="main-header">
           <div class="header-left">
-            <img
-              class="logo"
-              src="./assets/image-removebg-preview.png"
-              alt="LOGO"
-            />
-            <h1>RAJ <span id="spanBackground">ENTERPRISES</span></h1>
+            <a href="">
+              <img
+                class="logo"
+                src="./assets/image-removebg-preview.png"
+                alt="LOGO"
+            /></a>
+            <h1>
+              <a href="">RAJ <span id="spanBackground">ENTERPRISES</span></a>
+            </h1>
           </div>
           <div class="header-right">
             <img class="iso" src="./assets/iso-logo.png" alt="ISO" />
@@ -184,6 +185,7 @@
         market.....
       </div>
     </section>
+
     <main scrollbarContainer data-scroll-delay>
       <div class="heading">Manufacturers & Maintainers of</div>
       <div class="productsGrid">
@@ -489,18 +491,28 @@
         <div class="footerLeft">
           <div class="footerHeading">For Further Enquiry Contact :</div>
           <div class="leftFlex">
-            <div class="leftTopBold">Email</div>
+            <div class="leftTopBold">
+              <a
+                href="mailto:raj_enterprises2017@yahoo.com; ananth.rajenterprises@gmail.com"
+                >Email
+              </a>
+            </div>
             <div class="leftTop">
-              raj_enterprises2017@yahoo.com
-              <br />ananth.rajenterprises@gmail.com
+              <a
+                href="mailto:raj_enterprises2017@yahoo.com; ananth.rajenterprises@gmail.com"
+                >raj_enterprises2017@yahoo.com
+                <br />ananth.rajenterprises@gmail.com
+              </a>
             </div>
           </div>
           <div class="leftFlex">
             <div class="leftMiddleBold">Phone</div>
             <div class="leftMiddle">
-              +91 9987148414 <br />
-              +91 9920690144
+              <a href="tel:9987148414">+91 9987148414</a>
+              <br />
+              <a href="tel:9920690144">+91 9920690144</a>
             </div>
+            <!-- </div> -->
           </div>
           <div class="leftFlex">
             <div class="leftBottomBold">Address</div>
@@ -515,9 +527,18 @@
           <div class="footerHeading">Also Find Us At :</div>
           <div class="middleContent">
             <div class="middleLogo">
-              <img src="./assets/whatsapp.png" alt="Whatsapp" />
+              <a href="">
+                <img src="./assets/whatsapp.png" alt="Whatsapp" />
+              </a>
             </div>
-            <div class="middleLable">Whatsapp</div>
+            <a href=""><div class="middleLable">Whatsapp</div></a>
+          </div>
+          <div class="middleContent">
+            <a href="./assets/RajEnterprises.pdf" download="RajEnterprises.pdf">
+              <button class="dwnload">
+                <i class="fa fa-download"></i> Download Brochure
+              </button>
+            </a>
           </div>
         </div>
         <div class="footerRight">
