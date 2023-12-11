@@ -137,7 +137,7 @@ gsap.from(".clientRight", {
     trigger: ".clientRight",
     scrub: 2,
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 90%",
     // end: "top 60%",
   },
