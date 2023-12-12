@@ -83,3 +83,32 @@ sections.forEach((section) => {
     },
   });
 });
+let timeLine = gsap.timeline();
+timeLine.from(".infoHeading", {
+  y: -10,
+  scale: 0.9,
+  // rotation: 250,
+  duration: 0.4,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".infoHeading",
+    start: "top 80%",
+    // end: "-=500",
+    scrub: true,
+    // toggleActions: "restart none none none",
+  },
+});
+timeLine.from(".infoContent", {
+  y: -30,
+  scale: 0.9,
+  // rotation: 250,
+  duration: 0.4,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".infoContent",
+    start: "top 90%",
+    // end: "-=500",
+    scrub: true,
+    // toggleActions: "restart none none none",
+  },
+});
