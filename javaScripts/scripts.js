@@ -142,3 +142,35 @@ gsap.from(".clientRight", {
     // end: "top 60%",
   },
 });
+
+gsap.from(".subHeading", {
+  // y: -10,
+  scale: 0.97,
+  // rotation: 250,
+  duration: 0.4,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".subHeading",
+    scroller: "body",
+    start: "top 70%",
+    // end: "-=500",
+    scrub: true,
+    // toggleActions: "restart none none none",
+  },
+});
+
+gsap.from(".subHeading", {
+  // y: -10,
+  scale: 0.92,
+  // rotation: 250,
+  duration: 0.4,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".subHeading",
+    scroller: "body",
+    start: "top 70%",
+    // end: "-=500",
+    scrub: true,
+    // toggleActions: "restart none none none",
+  },
+});

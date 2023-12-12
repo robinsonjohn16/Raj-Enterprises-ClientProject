@@ -491,8 +491,8 @@ footer {
 .leftMiddleBold,
 .leftBottomBold {
   width: 15%;
-  color: #fff;
-  padding-left: 3em;
+  /* color: #fff; */
+  /* padding-left: 3em; */
   font-weight: 600;
 }
 .leftTop a,

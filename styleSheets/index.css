@@ -361,6 +361,7 @@ li:nth-child(5) {
 }
 .prod-dropdown-content {
   position: absolute;
+  z-index: 999;
   background-color: #028c9d;
   padding: 0 1em;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -468,8 +469,8 @@ footer {
 .leftMiddleBold,
 .leftBottomBold {
   width: 15%;
-  color: #fff;
-  padding-left: 3em;
+  /* color: #fff; */
+  /* padding-left: 3em; */
   font-weight: 600;
 }
 .leftTop a,

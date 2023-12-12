@@ -351,15 +351,14 @@ button:hover {
     margin-top: 9vw;
     width: 85%;
   }
-  /* .exp { */
-  /* height: 35vw; */
-  /* width: 35vw; */
-  /* } */
   .exp .record-subheading {
     font-size: 1.2em;
   }
   .div4 {
     font-size: 10px;
+  }
+  .exp .record-heading {
+    font-size: 2em;
   }
 }
 footer {
@@ -367,11 +366,6 @@ footer {
 }
 
 /* *Footer and NavBar */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
 
 body {
   background-color: #f2f6f9;
@@ -515,7 +509,7 @@ li:nth-child(5) {
     padding-left: 50vw;
   }
   .nav-dropdown-mobile.open {
-    height: 12em;
+    height: 17em;
     font-size: 0.7em;
   }
   .nav-dropdown-mobile > a {
@@ -585,7 +579,7 @@ footer {
 .leftBottomBold {
   width: 15%;
   color: #fff;
-  padding-left: 3em;
+  /* padding-left: 3em; */
   font-weight: 600;
 }
 .leftTop a,
