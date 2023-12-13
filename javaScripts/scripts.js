@@ -116,7 +116,7 @@ var sections = gsap.utils.toArray(".product");
 sections.forEach((section) => {
   gsap.from(section, {
     // y: -10,
-    scale: 0.9,
+    scale: 0.85,
     // rotation: 250,
     duration: 0.4,
     opacity: 1,
@@ -146,22 +146,6 @@ gsap.from(".clientRight", {
 gsap.from(".subHeading", {
   // y: -10,
   scale: 0.97,
-  // rotation: 250,
-  duration: 0.4,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".subHeading",
-    scroller: "body",
-    start: "top 70%",
-    // end: "-=500",
-    scrub: true,
-    // toggleActions: "restart none none none",
-  },
-});
-
-gsap.from(".subHeading", {
-  // y: -10,
-  scale: 0.92,
   // rotation: 250,
   duration: 0.4,
   opacity: 1,
