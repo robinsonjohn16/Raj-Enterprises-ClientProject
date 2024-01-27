@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Enterprises | Product</title>
+
+    <!-- Other Content Style -->
+    <link rel="stylesheet" href="./styleSheets/products.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/23ffd4fbcb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Locomotive -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-logo">
+        <svg
+          width="102"
+          height="91"
+          viewBox="0 0 102 91"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <rect y="2" width="101.5" height="88.5" fill="url(#pattern0)" />
+          <rect y="2" width="101.5" height="88.5" fill="url(#pattern1)" />
+          <rect width="101.5" height="88.5" fill="url(#pattern2)" />
+          <defs>
+            <pattern
+              id="pattern0"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use
+                xlink:href="#image0_0_1"
+                transform="scale(0.00492611 0.00564972)"
+              />
+            </pattern>
+            <pattern
+              id="pattern1"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use
+                xlink:href="#image1_0_1"
+                transform="scale(0.00492611 0.00564972)"
+              />
+            </pattern>
+            <pattern
+              id="pattern2"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use
+                xlink:href="#image2_0_1"
+                transform="scale(0.00492611 0.00564972)"
+              />
+            </pattern>
+            <image
+              id="image0_0_1"
+              width="203"
+              height="177"
+              xlink:href="data:image/png;base64,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"
+            />
+            <image
+              id="image1_0_1"
+              width="203"
+              height="177"
+              xlink:href="data:image/png;base64,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"
+            />
+            <image
+              id="image2_0_1"
+              width="203"
+              height="177"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAACxCAMAAABdnLmmAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAlVQTFRFAAAAzNzk4Orw3ejvXISf7/b68Pf7SnaUrcPRwdPdSnaT6vP3PGuLsMXTfp+0G1F25/D2vM7bC0Vtg6K37vX5KFt+J1t+3ejvoLnJAT5meJqwLF+BAD1my9rjjaq9BEBoVoCb6vL3ut/l1eHpFk5zCkVsxNXfi8nTcJSrMWOE4uzyUK+76/L2E0xxdZet7vb5FJSkAoydeJqwAT5nG1J3yNjizOfsC5CgxdXfE0xyQnCPn9PaBY2eUXuYhaS4ZbjEAoyd0N3nBEBoGlF2y9rkJ5ysXISfTHeV6fD2weDouszZEUpwAj5ngKC26/L4UHqYF090vc/b1OHpC0ZtL2GD5u/1epuyAj9nWYGd5+/2H1V5CENrmLLEfZ2zEUtxyNfi5u71MmOEMGKD1+PsscXUao+o7fT55u/1SHWTB0JqhaO4w9TfCkVsDUduscXUiKa6A0BoKV1/3Obu4evyPGuLNGWG4+zzvM7bCURsAz9ocZSsiqi8Az9om7TG4evzP26NCENrn7jJvtDcBEBoEEpw0d/oiKa7BEBoGVB1vdDc5e/1QnCPLmGD5/H3vtHdD0hvO2uL1OLrpLzNAT5mVH6a6fH45/H3VX+bAz9oa5Cp5e/21+TsDUZtepuyuc3ZFExyP26O4uz0fp+1AD1mNWaH2eTu5e/1TXmWCkRsa5Cp5vD15O70XYWgxdXgsNri4vD1Y7jDxuLqgcTP3+706vL57fT6ZYulAz9o5+/2WoKezt3mAD1mC0ZtVH6an7jJAD1mAD1m0N/pV4Cc4Ovz6fL5j6zABUFprL/CpwAAAMd0Uk5TACISFaMCBLlGMrUFxEN36Ao4/3ED1dYUUv97z/8maP+jAQIb7PovC4fKDCgH6oEFZAF//+QrKZQs8LpTVa1wXAwh9+ooF6KxBwQ68v51AbDuNx/3zw1+/6IG6f5de/gsCs7TGUSQAga1/HEv+fdDb/7XFw3Cyg03+f+IbPxZDLz7VDT98yFt+uw2B7jSDDPxxRtQ/KsFA6X+kQUZ9YI77MYIef3LGQaw85IHCqIuAgYHGQoKAQEPAQEjHglpNwUGAQYHAQEBAowPXDEAAAI3SURBVHic7dJjk1xhFEXhjm12cuJM7Ik1mdi2bdu2bdu2/btyu3/AZG7Nvn2matbz9Z63au3qjsUAAAAAAAAAAAAAAAAAAAAAAAAAAIjF8uX3LtApULCQd4JM4SJFvRN0ihUv4Z2gU7KUd4FO6TJlvRNkypWv4J0gU7FS5SreDTJV49W8E3SqWw3vBJmatWrXCfmkbiQhAvXqpzUI+aRhJCEKjaxxk3AvmkYTItCsubUI9aBlq9YRpeRcm/S27cLct++Qe7d07GSdw9x36RpViUA3s+4hzjN6RBUikNnTevXO/nmf6EoE+pr165/d4wFRluTcwEE2eIh3hMjQYWbDR3hXiIwcZTZ6jHeFyNhxZuMneFdoZE40mzTZu0JkiplNneZdoTF9RjBm5izvDI3ZaWbxOXO9MyTmzQ9+mAULvTM0Fi0OxixZ6p2hsWx5MGbFSu8MiVWrgy22Zq13h8S69cGWDRu9MzQ2bQ7GxLd4Z0hs3Zb4l23f4d0hsXNXYszuPd4dEnv3JcbsP+DdoXDwUGKLHT7iHaJw9FhyzPET3iEKJ08lx5w+4x0icPZccsv5Cxe9SwQuXU6OSb/iHaJw9VpyzPUb3iEKN28FU27f8c6QuHvP7j946F0h8ujxE+8E5AVPvQNknj33LgAAAMgrXrz0LpB59frNf2/evktBSIq89w4AAACIxIeP3gU6nz5/+erdIPPtu3cBAj9+ZvX1V6oyNH7/yeLj35RlAAAAAAAAAACA3OAfznZXyvJqEE4AAAAASUVORK5CYII="
+            />
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <header scrollbarContainer>
+      <div class="header">
+        <div class="main-header">
+          <div class="header-left">
+            <a href="">
+              <img
+                class="logo"
+                src="./assets/image-removebg-preview.png"
+                alt="LOGO"
+            /></a>
+            <h1>
+              <a href="">RAJ <span id="spanBackground">ENTERPRISES</span></a>
+            </h1>
+          </div>
+          <div class="header-right">
+            <img class="iso" src="./assets/iso-logo.png" alt="ISO" />
+          </div>
+        </div>
+        <div class="sub-heading">
+          <h2>-An ISO 9001-2005 CERTIFIED</h2>
+        </div>
+      </div>
+    </header>
+    <nav scrollbarContainer>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <div class="prod-dropdown">
+            <a href="#">Products</a>
+            <i class="ser fa-solid fa-caret-down"></i>
+            <div class="prod-dropdown-content">
+                <a href="./hvac.html">HVAC Panels</a>
+                <a href="./pcc.html">PCC Panels</a>
+                <a href="./ffp.html">FIRE Fighting Panels</a>
+                <a href="./amf.html">ATC / AMF</a>
+                <a href="./mcc.html">Motor Control Center</a>
+                <a href="./mcb.html">MCB Distribution Board</a>
+                <a href="./plc.html">PLC Panels</a>
+                <a href="./apfc.html">APFC Panels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li class="menu-icon">
+          <i class="bar-navbar fa-solid fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-dropdown-mobile">
+      <li><a href="./index.html">Home</a></li>
+      <li>
+        <div class="prod-dropdown">
+          <a href="#">Products</a>
+          <i class="ser fa-solid fa-caret-down"></i>
+          <div class="prod-dropdown-content">
+            <a href="./hvac.html">HVAC Panels</a>
+              <a href="./pcc.html">PCC Panels</a>
+              <a href="./ffp.html">FIRE Fighting Panels</a>
+              <a href="./amf.html">ATC / AMF</a>
+              <a href="./mcc.html">Motor Control Center</a>
+              <a href="./mcb.html">MCB Distribution Board</a>
+              <a href="./plc.html">PLC Panels</a>
+              <a href="./apfc.html">APFC Panels</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+    </div>
+    <main>
+      <div class="leftMain">
+        <div class="main_view">
+          <img
+            src="https://i0.wp.com/trivoltelectric.com/wp-content/uploads/2020/05/HVAC-3.png?fit=560%2C560&ssl=1"
+            id="main"
+            alt="IMAGE"
+          />
+        </div>
+        <div class="side_view">
+          <img
+            src="https://5.imimg.com/data5/KD/AX/MY-21114585/hvac-panels.jpg"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://i0.wp.com/trivoltelectric.com/wp-content/uploads/2020/05/HVAC-3.png?fit=560%2C560&ssl=1"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/1/TE/JO/YF/5585114/hvac-control-panels.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://expertengineers.co.in/images/service/hvac/img1.jpg"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://www.expertengineers.co.in/images/nav-img.png"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/4/301067526/BI/KZ/KY/2441686/hvac-control-panel-500x500.jpg"
+            onclick="change(this.src)"
+          />
+          <img
+            src="https://cpimg.tistatic.com/05864259/b/4/HVAC-Control-Panel.jpg"
+            onclick="change(this.src)"
+          />
+        </div>
+      </div>
+      <div class="rightMain">
+        <div class="rightInfo">
+          <div class="infoHeading">HVAC Panels</div>
+          <div class="infoContent">
+            Heating, ventilation and air conditioning (HVAC) control panels are
+            systems that manage the temperature and air in a given environment.
+            They are suitable for commercial, residential, public or industrial
+            usage.
+          </div>
+        </div>
+        <div class="rightFeature">
+          <div class="infoHeading">Our Features</div>
+          <div class="infoContent">
+            We are Specialist HVAC control panel manufacturer, has been
+            supplying quality manufactured HVAC controls for over three decades
+            and our extensive knowledge and experience with HVAC systems is one
+            of the primary reasons why clients choose our services
+          </div>
+          <ul>
+            <li>Heating controllers</li>
+            <li>Ventilation controllers</li>
+            <li>Air Conditioning controllers</li>
+          </ul>
+        </div>
+        <a href="./contact.html">
+          <button class="contactBtn">CONTACT US ></button></a
+        >
+      </div>
+    </main>
+    <section>
+      <div class="quote">
+        <div class="infoHeading">Quote Request</div>
+      </div>
+      <form>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <input type="text" name="mail" id="mail" placeholder="Your Email" />
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          maxlength="300"
+          placeholder="Subject"
+        />
+        <textarea
+          name="msg"
+          id="msg"
+          placeholder="Message"
+          maxlength="500"
+        ></textarea>
+        <input id="btn" type="button" value="Submit" />
+      </form>
+    </section>
+    <div class="related">
+      <div class="infoHeading">More Products</div>
+      <div class="productsGrid">
+        <div class="product">
+          <div class="topProduct">
+            <img src="./assets/examplePcc.png" alt="PCC" />
+          </div>
+          <div class="bottomProduct">
+            Power Control Center
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="topProduct">
+            <img src="./assets/examplePcc.png" alt="PCC" />
+          </div>
+          <div class="bottomProduct">
+            Power Control Center
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="topProduct">
+            <img src="./assets/examplePcc.png" alt="PCC" />
+          </div>
+          <div class="bottomProduct">
+            Power Control Center
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer scrollbarContainer>
+      <div class="flexFooter">
+        <!-- <div class="leftContent"> -->
+        <div class="footerLeft">
+          <div class="footerHeading">For Further Enquiry Contact :</div>
+          <div class="leftFlex">
+            <div class="leftTopBold">
+              <a
+                href="mailto:raj_enterprises2017@yahoo.com; ananth.rajenterprises@gmail.com"
+                >Email
+              </a>
+            </div>
+            <div class="leftTop">
+              <a
+                href="mailto:raj_enterprises2017@yahoo.com; ananth.rajenterprises@gmail.com"
+                >raj_enterprises2017@yahoo.com
+                <br />ananth.rajenterprises@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="leftFlex">
+            <div class="leftMiddleBold">Phone</div>
+            <div class="leftMiddle">
+              <a href="tel:9987148414">+91 9987148414</a>
+              <br />
+              <a href="tel:9920690144">+91 9920690144</a>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="leftFlex">
+            <div class="leftBottomBold">Address</div>
+            <div class="leftBottom">
+              23-A, Surat Singh Industrial Estate, Behind Agarwal Industrial
+              Estate, S. V. Road, Jogeshwari(W), Mumbai - 400 102
+            </div>
+          </div>
+        </div>
+
+        <div class="footerMiddle">
+          <div class="footerHeading">Also Find Us At :</div>
+          <div class="middleContent">
+            <div class="middleLogo">
+              <a href="">
+                <img src="./assets/whatsapp.png" alt="Whatsapp" />
+              </a>
+            </div>
+            <a href=""><div class="middleLable">Whatsapp</div></a>
+          </div>
+          <div class="middleContent">
+            <a href="./assets/RajEnterprises.pdf" download="RajEnterprises.pdf">
+              <button class="dwnload">
+                <i class="fa fa-download"></i> Download Brochure
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="footerRight">
+          <div class="rightHeading">Seeking the best? “Get a quote!”</div>
+          <button class="rightLabel">Inquire ></button>
+          <div class="rightHeading">
+            Connect with us for personalized assistance.
+          </div>
+          <button class="rightLabel">Get In Touch ></button>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="copyright">
+        <img src="./assets/copyright.png" alt="C" />
+        <div class="copyrightLabel">
+          Copyright 2023. All Rights Reserved,
+          <a href="tel:7208626085">Website by Robinson</a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </footer>
+  </body>
+  <!-- Gsap CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+  <!-- Scroll Trigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+  <!-- Locomotive -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+  <!-- SMTP -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- Vanilla Js -->
+  <script src="./javaScripts/prod.js"></script>
+</html>
