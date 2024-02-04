@@ -711,6 +711,9 @@ footer {
 .copyrightLabel {
    font-size: 0.95em;
 }
+.footerRight a {
+   color: #fff;
+}
 .copyrightLabel a {
    color: white;
    font-size: 1em;

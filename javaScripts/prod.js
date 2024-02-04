@@ -118,9 +118,9 @@ document.getElementById("btn").addEventListener("click", () => {
    } else {
       if (checkMail(mail)) {
          Email.send({
-            SecureToken: "bd14f7e4-1f2d-45d5-b71d-ba224ebbf30d",
-            To: "bestenfabrication@gmail.com",
-            From: "bestenfabrication@gmail.com",
+            SecureToken: "541d6892-7ad5-420b-bc54-2affed2aad11",
+            To: "rajenterprisesspammail@gmail.com",
+            From: "rajenterprisesspammail@gmail.com",
             Subject: subject,
             Body: finalMsg,
          }).then((message) => alert("Thankyou for connecting with us!!"));

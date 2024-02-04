@@ -563,6 +563,9 @@ footer {
    background-color: #084663;
    border: 1px solid #fff;
 }
+.footerRight a {
+   color: #fff;
+}
 .rightHeading {
    font-weight: 600;
    font-size: 1.1em;
