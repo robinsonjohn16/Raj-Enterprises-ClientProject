@@ -436,7 +436,7 @@ li:nth-child(5) {
       margin: auto;
       padding-right: 1em;
    }
-   ul li {
+   nav ul li {
       display: none;
    }
    ul {

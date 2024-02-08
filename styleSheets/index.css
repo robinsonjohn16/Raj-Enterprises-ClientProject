@@ -6,7 +6,6 @@
 
 body {
    height: 100%;
-
    background-color: #f2f6f9;
 }
 button {
@@ -16,7 +15,7 @@ button {
 /** Comment Section */
 #Main-slider {
    width: 100%;
-   height: 21em;
+   height: 23em;
    font-size: 15px;
    position: relative;
    background-color: #e6eff8;
@@ -92,7 +91,7 @@ button {
 @media (max-width: 600px) {
    #Main-slider {
       font-size: 9px;
-      height: 40em;
+      height: 45em;
    }
    .slider-main {
       flex-direction: column-reverse;
