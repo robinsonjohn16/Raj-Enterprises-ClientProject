@@ -118,7 +118,7 @@ document.getElementById("btn").addEventListener("click", () => {
    } else {
       if (checkMail(mail)) {
          Email.send({
-            SecureToken: "541d6892-7ad5-420b-bc54-2affed2aad11",
+         SecureToken: "541d6892-7ad5-420b-bc54-2affed2aad11",
             To: "rajenterprisesspammail@gmail.com",
             From: "rajenterprisesspammail@gmail.com",
             Subject: subject,

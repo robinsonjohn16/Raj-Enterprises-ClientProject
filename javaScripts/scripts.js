@@ -29,13 +29,13 @@ document.querySelector("#download-id").addEventListener("click", (e) => {
       readmore.classList.remove("#readMore");
       readmore.classList.add("newReadMore");
       document.querySelector("#download-id").textContent = "Show Less";
-      // animate_products();
-      getBoundingClientRect();
+      ScrollTrigger.refresh();
    } else {
       let readmore = document.querySelector(".readMore");
       readmore.classList.add("#readMore");
       readmore.classList.remove("newReadMore");
       document.querySelector("#download-id").textContent = "Show More";
+      ScrollTrigger.refresh();
    }
 });
 
@@ -88,6 +88,7 @@ const locoScroll = new LocomotiveScroll({
    el: document.querySelector("body"),
    smooth: true,
 });
+
 locoScroll.on("scroll", ScrollTrigger.update);
 ScrollTrigger.scrollerProxy("body", {
    scrollTop(value) {
@@ -107,9 +108,9 @@ ScrollTrigger.scrollerProxy("body", {
       ? "transform"
       : "fixed",
 });
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+// ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-ScrollTrigger.refresh();
+// ScrollTrigger.refresh();
 
 (function animate_products() {
    var sections = gsap.utils.toArray(".product");

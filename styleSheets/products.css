@@ -33,7 +33,7 @@ main {
    display: block;
    align-self: flex-start;
    text-align: justify;
-   width: 27em;
+   /* width: 27em; */
    line-height: 1.6em;
    margin-left: 1.5em;
 }
@@ -41,7 +41,7 @@ main {
    list-style: circle;
 }
 .contactBtn {
-   background-color: #028c9d;
+   background-color: #003852;
    border: none;
    cursor: pointer;
    padding: 1em;
@@ -119,10 +119,20 @@ section {
    font-size: 15px;
 }
 .quote {
+   position: relative;
    padding-top: 4em;
    padding-bottom: 1.5em;
 }
-
+.quote .bar{
+   height: 5em !important;
+   width: 11em !important;
+   top: 3.3em !important;
+}
+.infoHeading {
+   font-size: 1.6em;
+   font-weight: 600;
+   color: #716D6D;
+}
 form {
    border-radius: 0.5em;
    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -130,15 +140,24 @@ form {
    /* margin-top: 2em; */
    padding: 2em 0px;
    display: flex;
+   flex-direction: column;
+   align-items: center;
    margin: 0 auto;
    flex-wrap: wrap;
    gap: 1em;
    justify-content: space-evenly;
 }
+
+.form-container{
+   width: 90%;
+   display: flex;
+   align-items : center;
+   justify-content: space-between;
+}
 #name,
 #mail {
    border-radius: 0.5em;
-   width: 41%;
+   width: 48%;
    /* height: 2vw; */
    font-size: 0.8em;
    padding: 0.5vw 0px 1vw 0.5vw;
@@ -166,7 +185,6 @@ form {
    font-size: 0.9em;
    border: none;
    margin-top: 2em;
-   /* margin-left: 3em; */
    background-color: #082530;
    padding: 1em 3em;
    border-radius: 0.3em;
@@ -190,23 +208,29 @@ form {
       margin-top: 9vw;
    }
    form {
+      gap: 0.7em;
       width: 100%;
+   }
+   #subject{
+      text-indent: 10px;
+      font-size: 0.8em;
+      height: 2.5em;
    }
    #name,
    #mail {
-      width: 40%;
+      text-indent: 10px;
+      font-size: 0.8em;
+      height: 2.5em;
+      width: 48%;
    }
-   /* #name,
-  #mail,
-  #msg,
-  #subject {
-    font-size: 1.1em;
-  } */
+   #msg{
+      text-indent: 10px;
+      font-size: 0.8em;
+   }
    .quote {
       font-size: 10px;
    }
 }
-
 /* Related products */
 
 .related {
@@ -286,36 +310,37 @@ footer {
    font-family: "Poppins", sans-serif;
 }
 
-body {
-   background-color: #f2f6f9;
-}
-
 header {
    width: 100%;
    font-size: 15px;
 }
 
-h1 {
-   font-weight: 800;
-   font-size: 2.3em;
+h1 a div {
+   font-weight: 700;
+   font-size: 1.2em;
    color: #028c9d;
 }
 h1 a {
    color: #028c9d;
 }
-h1:hover {
-   transition: 0.3s ease-out;
-   font-size: 2.4em;
+.h1-container{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: -0.3em;
+   /* gap: 0.3em; */
 }
-a .logo:hover {
+
+/* a .logo:hover {
    transition: 0.3s ease-out;
    width: 5.1em;
-}
+} */
 #spanBackground {
    background-color: #003852;
    color: #ffffff;
    padding: 2px 10px;
    border-radius: 5px;
+   font-size: 0.6em;
    font-weight: 600;
 }
 
@@ -335,15 +360,16 @@ a .logo:hover {
    justify-self: flex-end;
 }
 .header-left img {
-   width: 5em;
+   width: 6.6em;
+   height: auto;
 }
 .header-right img {
    width: 6em;
 }
-.header-right img:hover {
+/* .header-right img:hover {
    width: 6.1em;
    transition: 0.2s ease-in-out;
-}
+} */
 .sub-heading {
    padding-left: 55vw;
 }
@@ -355,7 +381,7 @@ a {
 }
 nav {
    margin-top: 1em;
-   background-color: #028c9d;
+   background-color: #003852;
    height: 2.3em;
    font-size: 13px;
    display: flex;
@@ -390,8 +416,9 @@ li:nth-child(5) {
 }
 .prod-dropdown-content {
    position: absolute;
-   background-color: #028c9d;
-   padding: 0 1em;
+   z-index: 999;
+   background-color: #003852;
+   padding: 1em;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    display: none;
 }
@@ -399,7 +426,7 @@ li:nth-child(5) {
    display: block;
 }
 .prod-dropdown-content a {
-   margin-top: 0.5em;
+   margin-top: 1em;
    display: block;
    color: #fff;
    font-weight: 600;
@@ -411,7 +438,7 @@ li:nth-child(5) {
    gap: 2em;
    font-size: 1em;
    align-items: center;
-   background-color: #028c9d;
+   background-color: #003852;
    height: 0;
    overflow: hidden;
 }
@@ -455,7 +482,7 @@ li:nth-child(5) {
 
 /**Footer Styling  */
 footer {
-   background-color: #028c9d;
+   background-color: #003852;
    color: #fff;
    font-size: 13px;
 }
@@ -485,6 +512,9 @@ footer {
 .footerRight {
    width: 25%;
    /* align-items: center; */
+}
+.footerRight a {
+   color: #fff;
 }
 .leftFlex {
    display: flex;
@@ -556,15 +586,13 @@ footer {
    border: none;
    background-color: #003852;
    padding: 0.7em 1.5em;
+   border: 1px solid #fff;
    font-size: 1em;
    cursor: pointer;
 }
 .dwnload:hover {
    background-color: #084663;
    border: 1px solid #fff;
-}
-.footerRight a {
-   color: #fff;
 }
 .rightHeading {
    font-weight: 600;
@@ -576,6 +604,7 @@ footer {
    margin-top: 0.5em;
    color: #fff;
    padding: 0.6em 1.5em;
+   border: 1px solid #fff;
    font-weight: 600;
    border-radius: 0.2em;
    margin-bottom: 3em;
@@ -645,7 +674,11 @@ footer {
 
       /* margin-left: 7em; */
    }
+   .copyrightLabel {
+      font-size: 0.8em;
+   }
 }
+
 
 #preloader {
    width: 100vw;
